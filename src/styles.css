@@ -30,7 +30,7 @@ input:focus {
   border: none;
   background-color: lightskyblue;
   border-radius: 10px;
-  max-width: 700px;
+  max-width: 700px !important;
 }
 
 .weather {
