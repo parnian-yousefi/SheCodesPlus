@@ -68,6 +68,17 @@ input:focus {
   vertical-align: middle;
 }
 
+.github a {
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none !important;
+  color: darkslategrey;
+}
+
+.github a:hover {
+  color: black;
+}
+
 #currentDay {
   margin: 30px 0;
 }
