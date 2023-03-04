@@ -1,0 +1,73 @@
+body {
+  background-color: #73c9ff;
+}
+
+h1 {
+  font-family: "Racing Sans One", cursive;
+  font-weight: 900;
+}
+
+input {
+  width: 100%;
+  padding: 5px 10px;
+  background: rgb(205, 236, 255);
+  border: 1px solid gray;
+  border-radius: 10px;
+  transition: all 250ms ease-in-out;
+}
+
+input:hover {
+  background: whitesmoke;
+}
+
+input:focus {
+  outline: none;
+}
+
+.container {
+  padding-top: 10px;
+  margin-top: 50px;
+  border: none;
+  background-color: lightskyblue;
+  border-radius: 10px;
+  max-width: 700px;
+}
+
+.weather {
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+
+.unit {
+  background: none;
+  border: none;
+  color: black;
+}
+
+.weekDay {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-style: oblique;
+}
+
+.week div {
+  transition: all 250ms ease-in-out;
+}
+
+.week div:hover {
+  background: #7db9df;
+}
+
+.temp {
+  text-align: center;
+}
+
+.information {
+  vertical-align: middle;
+}
+
+#currentDay {
+  margin: 30px 0;
+}

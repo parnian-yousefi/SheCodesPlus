@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link href="src/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container shadow-lg">
+      <form action="">
+        <input type="search" placeholder="Search" id="searchBox" />
+      </form>
+      <div class="row" id="currentDay">
+        <div class="col-7 information">
+          <h1></h1>
+          <h2 id="date"></h2>
+          <h2>
+            Currently <span id="tempreture">7</span>
+            <button class="unit" id="celsius" disabled="true">°C</button> |
+            <button class="unit" id="fahrenheit">°F</button>
+          </h2>
+          <p><span class="max">9</span>° / <span class="min">2</span>°</p>
+          <br />
+          <p>
+            <span>Precipitation: 10%</span><br /><span>Humidity: 35%</span
+            ><br />
+            <span>Wind: 16 km/h</span>
+          </p>
+        </div>
+        <div class="col-5">
+          <img
+            src="images/heavy cloudy - sun.svg"
+            alt="Semi Cloudy"
+            class="weather"
+          />
+        </div>
+      </div>
+      <div class="row week">
+        <div class="col-2">
+          <p class="weekDay">Mon</p>
+          <img
+            src="images/heavy cloudy - sun.svg"
+            alt="Semi Cloudy"
+            class="weather"
+          />
+          <p class="temp">
+            <span class="max">10</span>° / <span class="min">5</span>°
+          </p>
+        </div>
+        <div class="col-2">
+          <p class="weekDay">Tue</p>
+          <img src="images/rainy.svg" alt="Semi Cloudy" class="weather" />
+          <p class="temp">
+            <span class="max">10</span>° / <span class="min">2</span>°
+          </p>
+        </div>
+        <div class="col-2">
+          <p class="weekDay">Wed</p>
+          <img
+            src="images/heavy cloudy - sun.svg"
+            alt="Semi Cloudy"
+            class="weather"
+          />
+          <p class="temp">
+            <span class="max">8</span>° / <span class="min">0</span>°
+          </p>
+        </div>
+        <div class="col-2">
+          <p class="weekDay">Thu</p>
+          <img
+            src="images/heavy cloudy - sun.svg"
+            alt="Semi Cloudy"
+            class="weather"
+          />
+          <p class="temp">
+            <span class="max">5</span>° / <span class="min">-2</span>°
+          </p>
+        </div>
+        <div class="col-2">
+          <p class="weekDay">Fri</p>
+          <img src="images/snowy.svg" alt="Semi Cloudy" class="weather" />
+          <p class="temp">
+            <span class="max">3</span>° / <span class="min">-4</span>°
+          </p>
+        </div>
+        <div class="col-2">
+          <p class="weekDay">Sat</p>
+          <img
+            src="images/heavy cloudy - sun.svg"
+            alt="Semi Cloudy"
+            class="weather"
+          />
+          <p class="temp">
+            <span class="max">4</span>° / <span class="min">-2</span>°
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
