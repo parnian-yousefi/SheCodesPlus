@@ -21,8 +21,15 @@ function displayWeather(response) {
   let tempreture = document.querySelector("#tempreture");
   let currentTemp = response.data.main.temp;
   let city = document.querySelector("h1");
+  let windSpeed = document.querySelector("#wind");
+  let condition = document.querySelector("#condition");
+  let icon = document.querySelector("#conImg");
   city.innerHTML = response.data.name;
   tempreture.innerHTML = Math.round(currentTemp);
+  console.log(response.data);
+  windSpeed.innerHTML = `Wind Speed: ${response.data.wind.speed} km/h`;
+  condition.innerHTML = `${response.data.weather[0].description}`;
+  icon.src = `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`;
 }
 
 navigator.geolocation.getCurrentPosition(findPosition);
@@ -93,7 +100,7 @@ let weekDays = [
   "Wednesday",
   "Thursday",
   "Friday",
-  "Saturday"
+  "Saturday",
 ];
 
 let weekDaysShort = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
