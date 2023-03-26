@@ -31,91 +31,27 @@
       </form>
       <div class="row" id="currentDay">
         <div class="col-7 information">
-          <h1></h1>
-          <h2 id="date"></h2>
+          <h1 style="display: inline-block"></h1>
+          <h2 style="display: inline-block" id="date">-</h2>
           <h2>
-            Currently <span id="tempreture">7</span>
+            <span id="tempreture"></span>
             <button class="unit" id="celsius" disabled="true">°C</button> |
             <button class="unit" id="fahrenheit">°F</button>
           </h2>
           <h3 id="condition"></h3>
-          <p><span class="max">9</span>° / <span class="min">2</span>°</p>
+          <p>
+            <span class="max" id="dayMax"></span>° /
+            <span class="min" id="dayMin"></span>°
+          </p>
           <br />
           <p>
-            <span>Precipitation: 10%</span><br /><span>Humidity: 35%</span
-            ><br />
-            <span id="wind">Wind: 16 km/h</span>
+            <span id="humidity"></span><br />
+            <span id="wind"></span>
           </p>
         </div>
-        <div class="col-5">
-          <img
-            src="images/heavy cloudy - sun.svg"
-            alt="Semi Cloudy"
-            class="weather"
-            id="conImg"
-          />
-        </div>
+        <div class="col-5" id="weatherIcon"></div>
       </div>
-      <div class="row week">
-        <div class="col-2">
-          <p class="weekDay">Mon</p>
-          <img
-            src="images/heavy cloudy - sun.svg"
-            alt="Semi Cloudy"
-            class="weather"
-          />
-          <p class="temp">
-            <span class="max">10</span>° / <span class="min">5</span>°
-          </p>
-        </div>
-        <div class="col-2">
-          <p class="weekDay">Tue</p>
-          <img src="images/rainy.svg" alt="Semi Cloudy" class="weather" />
-          <p class="temp">
-            <span class="max">10</span>° / <span class="min">2</span>°
-          </p>
-        </div>
-        <div class="col-2">
-          <p class="weekDay">Wed</p>
-          <img
-            src="images/heavy cloudy - sun.svg"
-            alt="Semi Cloudy"
-            class="weather"
-          />
-          <p class="temp">
-            <span class="max">8</span>° / <span class="min">0</span>°
-          </p>
-        </div>
-        <div class="col-2">
-          <p class="weekDay">Thu</p>
-          <img
-            src="images/heavy cloudy - sun.svg"
-            alt="Semi Cloudy"
-            class="weather"
-          />
-          <p class="temp">
-            <span class="max">5</span>° / <span class="min">-2</span>°
-          </p>
-        </div>
-        <div class="col-2">
-          <p class="weekDay">Fri</p>
-          <img src="images/snowy.svg" alt="Semi Cloudy" class="weather" />
-          <p class="temp">
-            <span class="max">3</span>° / <span class="min">-4</span>°
-          </p>
-        </div>
-        <div class="col-2">
-          <p class="weekDay">Sat</p>
-          <img
-            src="images/heavy cloudy - sun.svg"
-            alt="Semi Cloudy"
-            class="weather"
-          />
-          <p class="temp">
-            <span class="max">4</span>° / <span class="min">-2</span>°
-          </p>
-        </div>
-      </div>
+      <div class="row week"></div>
       <hr />
       <div class="row github">
         <a
