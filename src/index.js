@@ -50,7 +50,7 @@ function displayWeather(response) {
   condition.innerHTML = `${response.data.weather[0].description}`;
   humidity.innerHTML = `Humidity: ${response.data.main.humidity}%`;
   icon.innerHTML = `<img
-            src="images/${response.data.weather[0].icon}.svg"
+            src="images\\${response.data.weather[0].icon}.svg"
             alt="Semi Cloudy"
             class="weather"
             id="conImg"
@@ -75,7 +75,7 @@ function forecastWeather(response) {
             weekDaysShort[(currentDate.getDay() + j) % 7]
           }</p>
           <img
-            src="images/${response.data.daily[i + 1].weather[0].icon}.svg"
+            src="images\\${response.data.daily[i + 1].weather[0].icon}.svg"
             alt="${response.data.daily[i + 1].weather[0].main}"
             class="weather"
           />
