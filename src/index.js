@@ -50,7 +50,7 @@ function displayWeather(response) {
   condition.innerHTML = `${response.data.weather[0].description}`;
   humidity.innerHTML = `Humidity: ${response.data.main.humidity}%`;
   icon.innerHTML = `<img
-            src="https://openweathermap.org/img/wn/${response.data.weather[0].icon}@8x.png"
+            src="https://openweathermap.org/img/wn/${response.data.weather[0].icon}@4x.png"
             alt="Semi Cloudy"
             class="weather"
             id="conImg"
@@ -77,7 +77,7 @@ function forecastWeather(response) {
           <img
             src="https://openweathermap.org/img/wn/${
               response.data.daily[i + 1].weather[0].icon
-            }@8x.png"
+            }@4x.png"
             alt="${response.data.daily[i + 1].weather[0].main}"
             class="weather"
           />
