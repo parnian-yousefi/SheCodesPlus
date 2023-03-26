@@ -1,5 +1,7 @@
 body {
-  background-color: #73c9ff;
+  padding: 0;
+  margin: 0;
+  color: #252525;
 }
 
 h1 {
@@ -7,19 +9,24 @@ h1 {
   font-weight: 900;
 }
 
+h1,
 h2 {
-  font-weight: 100;
-  font-size: 1.5rem;
+  margin: 0 !important;
 }
 
-p {
-  margin: 0;
+img {
+  -webkit-filter: drop-shadow(3px 3px 3px #969696);
+  filter: drop-shadow(3px 3px 3px #969696);
+}
+
+button {
+  font-size: 0.5rem;
 }
 
 input {
   width: 100%;
   padding: 5px 10px;
-  background: rgb(205, 236, 255);
+  background: rgb(237, 246, 250) 100.2%;
   border: 1px solid gray;
   border-radius: 10px;
   transition: all 250ms ease-in-out;
@@ -35,9 +42,12 @@ input:focus {
 
 .container {
   padding-top: 10px;
-  margin-top: 50px;
   border: none;
-  background-color: lightskyblue;
+  background: linear-gradient(
+    109.6deg,
+    rgb(195, 227, 253) 11.2%,
+    rgb(237, 246, 250) 100.2%
+  );
   border-radius: 10px;
   max-width: 700px !important;
 }
@@ -48,10 +58,12 @@ input:focus {
   width: 100%;
 }
 
-.unit {
+.unit,
+#seprator {
   background: none;
   border: none;
-  color: black;
+  color: #252525;
+  font-size: 1rem !important;
 }
 
 .weekDay {
@@ -66,7 +78,7 @@ input:focus {
 }
 
 .week div:hover {
-  background: #7db9df;
+  background: #8eafc5ce;
 }
 
 .temp {
@@ -81,13 +93,22 @@ input:focus {
   text-align: center;
   font-weight: bold;
   text-decoration: none !important;
-  color: darkslategrey;
+  color: #2b4a72;
+  padding: 5px;
 }
 
 .github a:hover {
-  color: black;
+  color: #152438;
 }
 
 #currentDay {
   margin: 30px 0;
+}
+
+#date {
+  font-size: 1rem !important;
+}
+
+hr {
+  margin: 2px !important;
 }

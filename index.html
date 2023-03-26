@@ -25,17 +25,18 @@
   </head>
 
   <body>
-    <div class="container shadow-lg">
+    <div class="container shadow-lg align-middle">
       <form action="">
         <input type="search" placeholder="Search" id="searchBox" />
       </form>
       <div class="row" id="currentDay">
         <div class="col-7 information">
-          <h1 style="display: inline-block"></h1>
-          <h2 style="display: inline-block" id="date">-</h2>
+          <h1></h1>
+          <h2 id="date"></h2>
           <h2>
             <span id="tempreture"></span>
-            <button class="unit" id="celsius" disabled="true">°C</button> |
+            <button class="unit" id="celsius" disabled="true">°C</button
+            ><span id="seprator"> | </span>
             <button class="unit" id="fahrenheit">°F</button>
           </h2>
           <h3 id="condition"></h3>
