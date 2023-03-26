@@ -29,7 +29,7 @@ function displayWeather(response) {
   console.log(response.data);
   windSpeed.innerHTML = `Wind Speed: ${response.data.wind.speed} km/h`;
   condition.innerHTML = `${response.data.weather[0].description}`;
-  icon.src = `../images/cloudy.svg`;
+  icon.src = `https://github.com/parnian-yousefi/SheCodesPlus/tree/main/images/01d.svg`;
 }
 
 navigator.geolocation.getCurrentPosition(findPosition);
